@@ -1,0 +1,20 @@
+.header {}
+
+.logo {
+  background-image: url("/assets/img/logo.png");
+  width: 257px;
+  height: 85px;
+  float: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  img {}
+}
+
+.subtitle {
+  float: right;
+
+  h1 {
+    color: $title-color;
+  }
+}

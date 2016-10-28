@@ -1,0 +1,93 @@
+@import url( 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+@font-face {
+  font-family: 'Proxima Nova Lt';
+  src: url('../fonts/Proxima Nova Light.eot');
+  src: url('../fonts/Proxima Nova Light.eot?#iefix') format('embedded-opentype'), url('../fonts/Proxima Nova Light.woff2') format('woff2'), url('../fonts/Proxima Nova Light.woff') format('woff'), url('../fonts/Proxima Nova Light.svg#Proxima Nova Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+000D-FB04;
+}
+
+h1,
+h2,
+h3 {
+  color: $title-color;
+  font-family: Proxima Nova Lt;
+}
+
+h4,
+h5,
+.text-feature{
+  color: $title-color;
+  font-family: Roboto;
+}
+
+h1{
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+
+h4 {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+h5 {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+small {
+  font-size: 12px;
+  font-weight: 500;
+  color: $title-color;
+}
+
+small.min {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.text-feature{
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.text-semibold {
+  font-weight: 500;
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
+// Colours
+
+.access-color{
+  color: $access-color;
+}
+
+.persiangreen-color{
+  color: $persiangreen-color;
+}
+
+.atoll-color{
+  color: $atoll-color;
+}
+
+.turqoise-color{
+  color: $turqoise-color;
+}
+
+.orange-color{
+  color: $orange-color;
+}

@@ -1,0 +1,304 @@
+//Demo Styles for Style Guide Only - DO NOT COPY!!
+@import url( 'https://fonts.googleapis.com/css?family=Inconsolata:400,700');
+
+h1, h2{
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+p{
+  margin: 0 0 20px;
+}
+
+.box {
+  margin-bottom: 30px;
+
+  .box-color {
+    height: 75px;
+  }
+
+  .box-1 {
+    background-color: $access-color;
+  }
+
+  .box-2 {
+    background-color: $shiraz-color;
+  }
+
+  .box-3 {
+    background-color: $glacier-color;
+  }
+
+  .box-4 {
+    background-color: $persiangreen-color;
+  }
+
+  .box-5 {
+    background-color: $atoll-color;
+  }
+
+  .box-6 {
+    background-color: $midnightblue-color;
+  }
+
+  .box-7 {
+    background-color: $shark-color;
+  }
+
+  .box-8 {
+    background-color: $pink-color;
+  }
+
+  .box-9 {
+    background-color: $lilac-color;
+  }
+
+  .box-10 {
+    background-color: $purple-color;
+  }
+
+  .box-11 {
+    background-color: $turqoise-color;
+  }
+
+  .box-12 {
+    background-color: $darkgreen-color;
+  }
+
+  .box-13 {
+    background-color: $lightgreen-color;
+  }
+
+  .box-14 {
+    background-color: $gold-color;
+  }
+
+  .box-15 {
+    background-color: $orange-color;
+  }
+
+  .box-16 {
+    background-color: $yellow-color;
+  }
+
+  .box-17 {
+    background-color: $lightbrown-color;
+  }
+
+  .box-18 {
+    background-color: $darkbrown-color;
+  }
+
+  .box-info {
+    border: 1px solid $border-color;
+    height: 63px;
+    padding: 10px;
+    color: $title-color;
+
+    span.name {
+      font-weight: bold;
+      display: block;
+      font-size: 1.1em;
+    }
+  }
+}
+// Page Element Boxes
+.box-pe {
+  .box-1 {
+    background-color: $title-color;
+  }
+
+  .box-2 {
+    background-color: $default-color;
+  }
+
+  .box-3 {
+    background-color: $subtitles-color;
+  }
+
+  .box-4 {
+    background-color: $border-color;
+  }
+
+  .box-5 {
+    background-color: $toolbar-color;
+    border: 1px solid $border-color;
+    border-bottom: 0;
+  }
+
+  .box-6 {
+    background-color: $highlight-color;
+    border: 1px solid $border-color;
+    border-bottom: 0;
+  }
+
+  .box-7 {
+    background-color: $background-color;
+    border: 1px solid $border-color;
+    border-bottom: 0;
+  }
+
+  .box-8 {
+    background-color: $page-color;
+    border: 1px solid $border-color;
+    border-bottom: 0;
+  }
+
+  .box-9 {
+    background-color: $grey1-color;
+  }
+
+  .box-10 {
+    background-color: $grey2-color;
+  }
+
+  .box-11 {
+    background-color: $grey3-color;
+  }
+
+  .box-12 {
+    background-color: $grey4-color;
+  }
+
+  .box-13 {
+    background-color: $grey5-color;
+  }
+}
+
+.example-typography {
+  min-height: 65px;
+}
+
+.btn {
+  margin-top: 15px;
+}
+// Scroll Spy
+.nav {
+  a {
+    color: $title-color;
+  }
+
+  li {
+    a:focus,
+    a:hover {
+      background: $highlight-color;
+    }
+  }
+
+  .active {
+    font-weight: bold;
+
+    :focus a,
+    :hover a,
+    a {
+      border-left: 1px solid $border-color;
+      padding: 10px 14px;
+    }
+
+    :focus span,
+    :hover span,
+    span {
+      display: none;
+    }
+  }
+
+  .nav {
+    display: none;
+
+    .active {
+      > a {
+        background-color: $highlight-color;
+        border-left: 1px solid $title-color;
+        padding: 6px 15px;
+      }
+    }
+
+    a {
+      font-weight: normal;
+      font-size: 0.85em;
+      padding: 6px 15px;
+    }
+
+    span {
+      margin: 0 5px 0 2px;
+    }
+  }
+
+  .active .nav {
+    display: block;
+  }
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 7px;
+  right: 0;
+  display: inline-block;
+  padding: 10px;
+  margin: 1em;
+  background: #b7c1c3;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+
+  i {
+    position: absolute;
+    font-size: 20px;
+    color: #fff;
+  }
+}
+
+.back-to-top:hover {
+  cursor: pointer;
+}
+
+.code {
+  font-family: Inconsolata;
+  background-color: $highlight-color;
+  padding: 5px 10px;
+  border-left: 1px solid $title-color;
+  color: $title-color;
+  margin: 15px 0;
+}
+
+.message {
+  background-color: $highlight-color;
+  border-left: 2px solid $default-color;
+  color: $title-color;
+  padding: 10px;
+  margin: 15px 0;
+
+  span {
+    font-family: Inconsolata;
+    &.lightgreen{
+      color: $lightgreen-color;
+    }
+    &.lightbrown{
+      color: $lightbrown-color;
+    }
+  }
+}
+
+.application {
+  border-top: 1px solid #c1e1ec;
+}
+
+.affix-top {
+  position: relative;
+}
+
+.affix {
+  top: 20px;
+  width: 213px;
+}
+
+.affix-bottom {
+  position: absolute;
+  width: 213px;
+}
+@media (min-width:1200px) {
+  .affix,
+  .affix-bottom {
+    width: 263px;
+  }
+}

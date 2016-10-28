@@ -1,0 +1,403 @@
+@mixin hover-state {
+  &:active,
+  &:active:focus,
+  &:focus,
+  &:hover {
+    @content;
+  }
+}
+//Neutral
+$neutral-1: #4c4f53;
+$neutral-2: #7e7e81;
+$neutral-3: #dbe0e5;
+$neutral-4: #f7f8fa;
+
+.btn {
+  padding: 5px 12px;
+  border: 1px solid;
+  border-radius: $border-radius;
+  color: white;
+  font-size: 13px;
+  min-width: 100px;
+  @include hover-state {
+    box-shadow: none;
+    outline: none;
+    color: white;
+  }
+}
+
+.btn-sm {
+  padding: 3.5px 10px;
+}
+
+.btn-glacier {
+  background-color: $glacier-color;
+  border-color: darken( $glacier-color, 10% );
+
+  &:hover {
+    background-color: darken( $glacier-color, 5% );
+    border-color: darken( $glacier-color, 5% );
+  }
+
+  &:focus {
+    background-color: darken( $glacier-color, 10% );
+    border-color: darken( $glacier-color, 10% );
+  }
+}
+
+.btn-persiangreen {
+  background-color: $persiangreen-color;
+  border-color: darken( $persiangreen-color, 10% );
+
+  &:hover {
+    background-color: lighten( $persiangreen-color, 5% );
+    border-color: lighten( $persiangreen-color, 5% );
+  }
+
+  &:focus {
+    background-color: darken( $persiangreen-color, 5% );
+    border-color: darken( $persiangreen-color, 5% );
+  }
+}
+
+.btn-atoll {
+  background-color: $atoll-color;
+  border-color: darken( $atoll-color, 10% );
+
+  &:hover {
+    background-color: lighten( $atoll-color, 5% );
+    border-color: lighten( $atoll-color, 5% );
+  }
+
+  &:focus {
+    background-color: darken( $atoll-color, 5% );
+    border-color: darken( $atoll-color, 5% );
+  }
+}
+
+.btn-midnightblue {
+  background-color: $midnightblue-color;
+  border-color: darken( $midnightblue-color, 10% );
+
+  &:hover {
+    background-color: lighten( $midnightblue-color, 5% );
+    border-color: lighten( $midnightblue-color, 5% );
+  }
+
+  &:focus {
+    background-color: darken( $midnightblue-color, 5% );
+    border-color: darken( $midnightblue-color, 5% );
+  }
+}
+
+.btn-access {
+  background-color: $access-color;
+  border-color: darken( $access-color, 10% );
+
+  &:hover {
+    background-color: lighten( $access-color, 5% );
+    border-color: lighten( $access-color, 5% );
+  }
+
+  &:focus {
+    background-color: darken( $access-color, 5% );
+    border-color: darken( $access-color, 5% );
+  }
+}
+
+.btn-shiraz {
+  background-color: $shiraz-color;
+  border-color: darken( $shiraz-color, 10% );
+
+  &:hover {
+    background-color: lighten( $shiraz-color, 5% );
+    border-color: lighten( $shiraz-color, 5% );
+  }
+
+  &:focus {
+    background-color: darken( $shiraz-color, 5% );
+    border-color: darken( $shiraz-color, 5% );
+  }
+}
+
+.btn-pink {
+  background-color: $pink-color;
+  border-color: darken( $pink-color, 10% );
+
+  &:hover {
+    background-color: lighten( $pink-color, 5% );
+    border-color: lighten( $pink-color, 5% );
+  }
+
+  &:focus {
+    background-color: darken( $pink-color, 5% );
+    border-color: darken( $pink-color, 5% );
+  }
+}
+
+.btn-lilac {
+  background-color: $lilac-color;
+  border-color: darken( $lilac-color, 10% );
+
+  &:hover {
+    background-color: lighten( $lilac-color, 5% );
+    border-color: lighten( $lilac-color, 5% );
+  }
+
+  &:focus {
+    background-color: darken( $lilac-color, 5% );
+    border-color: darken( $lilac-color, 5% );
+  }
+}
+
+.btn-purple {
+  background-color: $purple-color;
+  border-color: darken( $purple-color, 10% );
+
+  &:hover {
+    background-color: lighten( $purple-color, 5% );
+    border-color: lighten( $purple-color, 5% );
+  }
+
+  &:focus {
+    background-color: darken( $purple-color, 5% );
+    border-color: darken( $purple-color, 5% );
+  }
+}
+
+.btn-turqoise {
+  background-color: $turqoise-color;
+  border-color: darken( $turqoise-color, 10% );
+
+  &:hover {
+    background-color: lighten( $turqoise-color, 5% );
+    border-color: lighten( $turqoise-color, 5% );
+  }
+
+  &:focus {
+    background-color: darken( $turqoise-color, 5% );
+    border-color: darken( $turqoise-color, 5% );
+  }
+}
+
+.btn-darkgreen {
+  background-color: $darkgreen-color;
+  border-color: darken( $darkgreen-color, 10% );
+
+  &:hover {
+    background-color: lighten( $darkgreen-color, 5% );
+    border-color: lighten( $darkgreen-color, 5% );
+  }
+
+  &:focus {
+    background-color: darken( $darkgreen-color, 5% );
+    border-color: darken( $darkgreen-color, 5% );
+  }
+}
+
+.btn-lightgreen {
+  background-color: $lightgreen-color;
+  border-color: darken( $lightgreen-color, 10% );
+
+  &:hover {
+    background-color: lighten( $lightgreen-color, 5% );
+    border-color: lighten( $lightgreen-color, 5% );
+  }
+
+  &:focus {
+    background-color: darken( $lightgreen-color, 5% );
+    border-color: darken( $lightgreen-color, 5% );
+  }
+}
+
+.btn-gold {
+  background-color: $gold-color;
+  border-color: darken( $gold-color, 10% );
+
+  &:hover {
+    background-color: lighten( $gold-color, 5% );
+    border-color: lighten( $gold-color, 5% );
+  }
+
+  &:focus {
+    background-color: darken( $gold-color, 5% );
+    border-color: darken( $gold-color, 5% );
+  }
+}
+
+.btn-orange {
+  background-color: $orange-color;
+  border-color: darken( $orange-color, 10% );
+
+  &:hover {
+    background-color: lighten( $orange-color, 5% );
+    border-color: lighten( $orange-color, 5% );
+  }
+
+  &:focus {
+    background-color: darken( $orange-color, 5% );
+    border-color: darken( $orange-color, 5% );
+  }
+}
+
+.btn-yellow {
+  background-color: $yellow-color;
+  border-color: darken( $yellow-color, 10% );
+
+  &:hover {
+    background-color: lighten( $yellow-color, 5% );
+    border-color: lighten( $yellow-color, 5% );
+  }
+
+  &:focus {
+    background-color: darken( $yellow-color, 5% );
+    border-color: darken( $yellow-color, 5% );
+  }
+}
+
+.btn-lightbrown {
+  background-color: $lightbrown-color;
+  border-color: darken( $lightbrown-color, 10% );
+
+  &:hover {
+    background-color: lighten( $lightbrown-color, 5% );
+    border-color: lighten( $lightbrown-color, 5% );
+  }
+
+  &:focus {
+    background-color: darken( $lightbrown-color, 5% );
+    border-color: darken( $lightbrown-color, 5% );
+  }
+}
+
+.btn-darkbrown {
+  background-color: $darkbrown-color;
+  border-color: darken( $darkbrown-color, 10% );
+
+  &:hover {
+    background-color: lighten( $darkbrown-color, 5% );
+    border-color: lighten( $darkbrown-color, 5% );
+  }
+
+  &:focus {
+    background-color: darken( $darkbrown-color, 5% );
+    border-color: darken( $darkbrown-color, 5% );
+  }
+}
+
+.btn-neutral-1 {
+  background-color: $neutral-1;
+  border-color: darken( $neutral-1, 10% );
+
+  &:hover {
+    background-color: lighten( $neutral-1, 5% );
+    border-color: lighten( $neutral-1, 5% );
+  }
+
+  &:focus {
+    background-color: darken( $neutral-1, 5% );
+    border-color: darken( $neutral-1, 5% );
+  }
+}
+
+.btn-neutral-2 {
+  background-color: $neutral-2;
+  border-color: darken( $neutral-2, 10% );
+
+  &:hover {
+    background-color: lighten( $neutral-2, 5% );
+    border-color: lighten( $neutral-2, 5% );
+  }
+
+  &:focus {
+    background-color: darken( $neutral-2, 5% );
+    border-color: darken( $neutral-2, 5% );
+  }
+}
+
+.btn-neutral-3 {
+  background-color: $neutral-3;
+  border-color: darken( $neutral-3, 10% );
+  color: $title-color;
+
+  &:hover {
+    background-color: lighten( $neutral-3, 5% );
+    border-color: $neutral-3;
+    color: $title-color;
+  }
+
+  &:focus {
+    background-color: darken( $neutral-3, 5% );
+    border-color: darken( $neutral-3, 10% );
+    color: $title-color;
+  }
+
+  &:active:focus {
+    color: $title-color;
+  }
+}
+
+.btn-neutral-4 {
+  background-color: $neutral-4;
+  border-color: darken( $neutral-4, 10% );
+  color: $title-color;
+
+  &:hover {
+    background-color: lighten( $neutral-4, 5% );
+    color: $title-color;
+  }
+
+  &:focus {
+    background-color: darken( $neutral-4, 5% );
+    color: $title-color;
+  }
+
+  &:active:focus {
+    color: $title-color;
+  }
+}
+// Button Icon
+
+.btn-icon {
+  padding: 3px 0;
+  min-width: 0;
+  width: 32px;
+  height: 32px;
+
+  i {
+    font-size: 24px;
+  }
+}
+
+.btn-with-icon {
+  padding: 5px 12px;
+
+  i {
+    margin-left: -5px;
+    margin-right: 5px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-top: -2px;
+    font-size: 16px;
+  }
+
+  i.right {
+    margin-left: 5px;
+    margin-right: -5px;
+  }
+}
+//Button Dropdowns
+
+.btn-group .dropdown-toggle {
+  text-align: left;
+}
+
+.btn-group.open .dropdown-toggle {
+  box-shadow: none;
+}
+
+.btn .caret {
+  float: right;
+  margin-top: 8px;
+  margin-left: 10px;
+}

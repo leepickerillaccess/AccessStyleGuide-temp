@@ -1,0 +1,297 @@
+// Global
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+// Form Controls
+
+.form-control {
+  -moz-border-radius: $border-radius;
+  -webkit-border-radius: $border-radius;
+  border-radius: $border-radius;
+  border-color: $border-color;
+  font-size: 13px;
+  box-shadow: none;
+  color: $default-color;
+  resize: vertical;
+
+  &.input-small{
+    height: 28px;
+    width: 100%;
+  }
+
+  &:focus {
+    border-color: darken( $border-color, 10% );
+    box-shadow: none;
+  }
+
+  &[disabled] {
+    background-color: darken( $background-color, 1% );
+    cursor: default;
+  }
+  &.error{
+    border-bottom-color: $access-color;
+  }
+  &.valid{
+    border-bottom-color: $lightgreen-color;
+  }
+}
+
+.form-control-feedback {
+  font-family: Access;
+  font-size: 16px;
+}
+
+label {
+  font-weight: normal;
+  color: $title-color;
+  width: 100%;
+}
+
+.input-group .form-control {
+  border-right: 0;
+
+  &:focus + .input-group-after {
+    border-color: darken( $border-color, 10% );
+  }
+}
+
+.input-group.full .form-control {
+  border-right: 1px solid $border-color;
+}
+
+.input-group:focus {
+  .input-group-addon {
+    border-color: red;
+  }
+}
+
+.input-group .btn-group {
+  .dropdown-toggle {
+    padding: 8px;
+    margin-left: -4px;
+  }
+
+  button {
+    float: none;
+    min-width: 0;
+    margin: 0;
+    height: 34px;
+
+    .caret {
+      margin-top: 1px;
+      margin-left: 0;
+    }
+  }
+}
+
+.input-group-addon {
+  padding: 3px 5px;
+  border-radius: $border-radius;
+  background: #fff;
+  border-color: $border-color;
+
+  + .has-feedback {
+    .form-control {
+      border-radius: 0;
+      z-index: 0;
+    }
+  }
+
+  i {
+    font-size: 24px;
+    color: darken( $border-color, 15% );
+  }
+}
+
+.input-group-after {
+  padding: 3px 5px;
+  line-height: 1;
+  color: #555;
+  text-align: center;
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: middle;
+  display: table-cell;
+  border: 1px solid $border-color;
+  border-top-right-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+  border-left: 0;
+
+  i {
+    color: darken( $border-color, 10% );
+    font-size: 18px;
+  }
+}
+
+.input-group-btn:first-child > .btn {
+  margin-top: 0;
+  height: 34px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+
+  i {
+    margin-right: 10px;
+  }
+}
+
+.input-group-btn:last-child > .btn {
+  margin-top: 0;
+  height: 34px;
+
+  i {
+    margin-right: 10px;
+  }
+}
+
+.input-group-btn + .has-feedback input {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: none;
+  border-right: 1px solid $border-color;
+  margin-left: 1px;
+
+  &:focus {
+    border-color: darken( $border-color, 10% );
+  }
+}
+
+.input-group-btn {
+  font-size: 13px;
+}
+
+.form-focus {
+  border-color: darken( $border-color, 10% );
+  transition: border-color ease-in-out 0.15s;
+}
+//Stepper
+
+.stepper {
+  float: left;
+  min-width: 30px;
+  height: 34px;
+  padding: 0;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid $border-color;
+  background: none;
+  outline: none;
+  pointer-events: none;
+}
+
+span.spinner {
+  position: absolute;
+  height: 34px;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+
+  .add,
+  > .sub,
+  span.spinner {
+    float: left;
+    display: block;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    line-height: 33px;
+    color: #93504C;
+    border: 1px solid $border-color;
+    cursor: pointer;
+    background-color: $background-color;
+    transition: 0.1s linear;
+    -o-transition: 0.1s linear;
+    -ms-transition: 0.1s linear;
+    -moz-transition: 0.1s linear;
+    -webkit-transition: 0.1s linear;
+  }
+
+  > .sub {
+    border-right: 0;
+    border-radius: 2px 0 0 2px;
+  }
+
+  > .add {
+    top: 0;
+    border-left: 0;
+    border-radius: 0 2px 2px 0;
+  }
+
+  .add:hover,
+  > .sub:hover,
+  span.spinner {
+    background: darken( $background-color, 5% );
+    color: #25323B;
+  }
+
+  i {
+    font-size: 18px;
+    color: $default-color;
+    margin-top: -4px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+// Validation Styles
+//// Micro Validation
+
+label.error {
+  float: right;
+  background-color: $access-color;
+  color: #fff;
+  font-size: 11px;
+  padding: 3px 8px;
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+  margin-top: -1px;
+  position: relative;
+  pointer-events: none;
+  text-align: right;
+  width: inherit;
+
+  &::after {
+    bottom: 100%;
+    right: 12px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(238,21,79,0);
+    border-bottom-color: #ee154f;
+    border-width: 4px;
+    margin-left: -4px;
+  }
+
+  &:empty {
+    //display: none !important;
+  }
+
+  &.valid {
+    background: transparent;
+
+    &::before {
+      content: "\e985";
+      font-family: Access;
+      position: absolute;
+      pointer-events: none;
+      color: $lightgreen-color;
+      right: 7px;
+      bottom: 9px;
+      font-size: 17px;
+    }
+
+    &::after {
+      border: none;
+    }
+
+    & + .form-control-feedback{
+      margin-right: 30px;
+    }
+  }
+}
